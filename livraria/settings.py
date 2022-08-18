@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-a5wf@wgqxkp0#0w-ltbz^v+p9l2k@rdbzcsh^*&(z-!4r6eisg
 
 DEBUG = True
 
-ALLOWED_HOSTS = True
+ALLOWED_HOSTS = []
 
 LANGUAGE_CODE = "pt-br"
 TIME_ZONE = "America/Sao_Paulo"
