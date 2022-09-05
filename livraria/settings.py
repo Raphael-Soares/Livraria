@@ -20,6 +20,11 @@ CORS_ALLOW_ALL_ORIGINS = True
 LANGUAGE_CODE = "pt-br"
 TIME_ZONE = "America/Sao_Paulo"
 
+REST_FRAMEWORK = {
+  "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.DjangoModelPermissions",
+    ],
+}
 
 INSTALLED_APPS = [
     'django.contrib.admin',
