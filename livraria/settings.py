@@ -21,9 +21,14 @@ LANGUAGE_CODE = "pt-br"
 TIME_ZONE = "America/Sao_Paulo"
 
 REST_FRAMEWORK = {
-  "DEFAULT_PERMISSION_CLASSES": [
+ 'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
         "rest_framework.permissions.DjangoModelPermissions",
+        
     ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ]
 }
 
 INSTALLED_APPS = [
@@ -36,6 +41,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework",   
     "core",
+    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
