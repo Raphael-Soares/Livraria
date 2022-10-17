@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-
+AUTH_USER_MODEL = "core.Usuario"
 
 SECRET_KEY = 'django-insecure-a5wf@wgqxkp0#0w-ltbz^v+p9l2k@rdbzcsh^*&(z-!4r6eisg'
 
