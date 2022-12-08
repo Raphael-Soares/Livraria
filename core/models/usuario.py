@@ -9,7 +9,7 @@ class Usuario(AbstractUser):
     telefone = models.CharField(max_length=11, blank=True, null=True, unique=True)
     data_nascimento = models.DateField(blank=True, null=True)
     foto = models.ForeignKey(
-        Image,
+      
         related_name="+",
         on_delete=models.CASCADE,
         null=True,
