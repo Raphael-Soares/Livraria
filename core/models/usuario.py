@@ -8,11 +8,3 @@ class Usuario(AbstractUser):
     cpf = models.CharField(max_length=11, blank=True, null=True, unique=True)
     telefone = models.CharField(max_length=11, blank=True, null=True, unique=True)
     data_nascimento = models.DateField(blank=True, null=True)
-    foto = models.ForeignKey(
-      
-        related_name="+",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        default=None,
-    )
